@@ -13,9 +13,14 @@
 		8842CD802741795500686F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8842CD7E2741795500686F84 /* Main.storyboard */; };
 		8842CD822741795600686F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8842CD812741795600686F84 /* Assets.xcassets */; };
 		8842CD852741795600686F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8842CD832741795600686F84 /* LaunchScreen.storyboard */; };
+		88F88B8F275740CE00B6BD4C /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F88B8E275740CE00B6BD4C /* AddMemoViewController.swift */; };
+		88F88B91275740DD00B6BD4C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F88B90275740DD00B6BD4C /* DetailViewController.swift */; };
+		B15A47A06DA9BD3D66067CC4 /* Pods_NCMBmemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0711E8A5CA2821B6A27AE4 /* Pods_NCMBmemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0711E8A5CA2821B6A27AE4 /* Pods_NCMBmemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCMBmemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		570D283C1A16D617C56BA430 /* Pods-NCMBmemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCMBmemo.release.xcconfig"; path = "Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo.release.xcconfig"; sourceTree = "<group>"; };
 		8842CD752741795500686F84 /* NCMBmemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCMBmemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8842CD782741795500686F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8842CD7A2741795500686F84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		8842CD812741795600686F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8842CD842741795600686F84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8842CD862741795600686F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F88B8E275740CE00B6BD4C /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
+		88F88B90275740DD00B6BD4C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A6899D1BF952F1E8A3B8AD78 /* Pods-NCMBmemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCMBmemo.debug.xcconfig"; path = "Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15A47A06DA9BD3D66067CC4 /* Pods_NCMBmemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				8842CD772741795500686F84 /* NCMBmemo */,
 				8842CD762741795500686F84 /* Products */,
+				9F7A040A9A3881BC4D076979 /* Pods */,
+				A946C6D4E428E3AD7195B6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				8842CD782741795500686F84 /* AppDelegate.swift */,
 				8842CD7A2741795500686F84 /* SceneDelegate.swift */,
 				8842CD7C2741795500686F84 /* ViewController.swift */,
+				88F88B8E275740CE00B6BD4C /* AddMemoViewController.swift */,
+				88F88B90275740DD00B6BD4C /* DetailViewController.swift */,
 				8842CD7E2741795500686F84 /* Main.storyboard */,
 				8842CD812741795600686F84 /* Assets.xcassets */,
 				8842CD832741795600686F84 /* LaunchScreen.storyboard */,
 				8842CD862741795600686F84 /* Info.plist */,
 			);
 			path = NCMBmemo;
+			sourceTree = "<group>";
+		};
+		9F7A040A9A3881BC4D076979 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6899D1BF952F1E8A3B8AD78 /* Pods-NCMBmemo.debug.xcconfig */,
+				570D283C1A16D617C56BA430 /* Pods-NCMBmemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A946C6D4E428E3AD7195B6BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F0711E8A5CA2821B6A27AE4 /* Pods_NCMBmemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8842CD892741795600686F84 /* Build configuration list for PBXNativeTarget "NCMBmemo" */;
 			buildPhases = (
+				128881BBB1FA141A0F0458FE /* [CP] Check Pods Manifest.lock */,
 				8842CD712741795500686F84 /* Sources */,
 				8842CD722741795500686F84 /* Frameworks */,
 				8842CD732741795500686F84 /* Resources */,
+				FCDBB71C473ADC7619A98555 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		128881BBB1FA141A0F0458FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCMBmemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDBB71C473ADC7619A98555 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NCMBmemo/Pods-NCMBmemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8842CD712741795500686F84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F88B8F275740CE00B6BD4C /* AddMemoViewController.swift in Sources */,
 				8842CD7D2741795500686F84 /* ViewController.swift in Sources */,
+				88F88B91275740DD00B6BD4C /* DetailViewController.swift in Sources */,
 				8842CD792741795500686F84 /* AppDelegate.swift in Sources */,
 				8842CD7B2741795500686F84 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +360,7 @@
 		};
 		8842CD8A2741795600686F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6899D1BF952F1E8A3B8AD78 /* Pods-NCMBmemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +388,7 @@
 		};
 		8842CD8B2741795600686F84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570D283C1A16D617C56BA430 /* Pods-NCMBmemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
